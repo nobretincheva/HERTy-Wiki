@@ -1,0 +1,9 @@
+model: "transformers_model"
+model_path: "meta-llama/Llama-3.1-70B-Instruct"
+chat_header: "<|begin_of_text|><|start_header_id|>user<|end_header_id|>\n\n"
+chat_footer: "<|eot_id|>\n<|start_header_id|>assistant<|end_header_id|>"
+use_quantization: true
+fws_exemplars_path: "WikiReason/benchmark/exemplars/et_exemplars.jsonl"
+tr_context: "add_info_def"
+max_new_tokens: 1024
+batch_size: 32  # for CoT case we used dynamic batching - in case of an OOM - we would try with batch / 2

@@ -1,0 +1,14 @@
+model: "transformers_model"
+model_path: "openai/gpt-oss-20b"
+# The GPT-OSS requires a more complicated system message - sys_message, reasoning_effort and chat_header are concatenated at runtime
+# we keep current data static for reproducibility as date awareness is not of import to our benchmark
+system_message: "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2025-09-17"
+# reasoning effort: low, medium, high
+# we use medium effort for CoT and low for our other settings
+reasoning_effort: "\n\nReasoning: medium"
+chat_header: "\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message<|end|>\n<|start|>user<|message|>"
+chat_footer: "<|end|>\n<|start|>assistant"
+use_quantization: false
+fws_exemplars_path: "WikiReason/benchmark/exemplars/et_exemplars.jsonl"
+max_new_tokens: 1024 # or 2048 + medium + batch - 8 for CoT
+batch_size: 8

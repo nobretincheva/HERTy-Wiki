@@ -1,0 +1,8 @@
+model: "transformers_model"
+model_path: "meta-llama/Llama-3.1-8B-Instruct"
+chat_header: "<|begin_of_text|><|start_header_id|>user<|end_header_id|>\n\n"
+chat_footer: "<|eot_id|>\n<|start_header_id|>assistant<|end_header_id|>"
+use_quantization: false
+fws_exemplars_path: "WikiReason/benchmark/exemplars/et_exemplars.jsonl"
+max_new_tokens: 2048
+batch_size: 32

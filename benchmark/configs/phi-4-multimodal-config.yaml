@@ -1,0 +1,10 @@
+model: "transformers_model"
+model_path: "microsoft/Phi-4-multimodal-instruct"
+chat_header: "<|user|>"
+chat_footer: "<|end|><|assistant|>"
+image_token: "<|image_IMAGENUM|>"
+use_quantization: false
+fws_exemplars_path: "WikiReason/benchmark/exemplars/et_exemplars.jsonl"
+tr_context: "add_info_def"
+max_new_tokens: 2048
+batch_size: 8

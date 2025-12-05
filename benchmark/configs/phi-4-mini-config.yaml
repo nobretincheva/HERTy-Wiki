@@ -1,0 +1,8 @@
+model: "transformers_model"
+model_path: "microsoft/phi-4-mini-instruct"
+chat_header: "<|system|>Your name is Phi, an AI math expert developed by Microsoft.<|end|><|user|>"
+chat_footer: "<|end|><|assistant|>"
+use_quantization: false
+fws_exemplars_path: "WikiReason/benchmark/exemplars/et_exemplars.jsonl"
+max_new_tokens: 2048
+batch_size: 16

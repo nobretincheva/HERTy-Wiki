@@ -1,0 +1,5 @@
+model: "openai_model"
+model_path: "gpt-5-mini-2025-08-07"
+fws_exemplars_path: "WikiReason/benchmark/exemplars/et_exemplars.jsonl"
+max_new_tokens: 1024
+api_key: "ENTER_API_KEY_HERE"

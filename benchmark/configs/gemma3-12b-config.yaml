@@ -1,0 +1,9 @@
+model: "transformers_model"
+model_path: "google/gemma-3-12b-it"
+chat_header: "<start_of_turn>user\n"
+chat_footer: "<end_of_turn>\n<start_of_turn>model\n"
+image_token: "<start_of_image>"
+use_quantization: false
+fws_exemplars_path: "WikiReason/benchmark/exemplars/et_exemplars.jsonl"
+max_new_tokens: 2048
+batch_size: 8
