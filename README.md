@@ -9,20 +9,21 @@ HERTy-Wiki is intended solely for evaluation and analysis of hierarchical entity
 - Third-party images retain their original Creative Commons or public-domain licenses, as listed in the attribution files in dataset/multimodal/.
 - Users must comply with the specific license terms attached to each image when redistributing or reusing visual content.
 
-Textual data originates from Wikidata (CC0), and geolocation information is derived from OpenStreetMap (ODbL).
+Textual data originates from Wikidata (CC0), geolocation information is derived from OpenStreetMap (ODbL).
 
 Full attribution, license texts, and metadata can be found in the dataset folder.
 
 ## Structure
-The full dataset—including the text-only benchmark file (entity_typing.parquet) and the multimodal image store (multimodal/images.arrow)—is hosted at:
-\[TOBEINCLUDED]
+The full dataset, including the text-only benchmark file (entity_typing.parquet) and the multimodal image store (multimodal/images.arrow) is hosted at: Zenodo
+
+We additionally intend to release a HuggingFace version of this dataset to allow for ease of integration in evaluation pipelines. 
 
 Additional resources in the repository:
 - Dataset documentation: dataset/README.md
 - Multimodal attribution & license details: dataset/multimodal/
 - Benchmark configs: configs/
 - Baseline models: models/
-- Evaluation pipeline: eval_entity_typing.py
+- Evaluation pipeline: benchmark/benchmark.py and benchmark/evaluate.py
 
 For questions, issues, or removal requests, please open an Issue on the GitHub repository.
 The dataset is actively maintained by the authors

@@ -13,6 +13,8 @@ pip install -r requirements.txt
 ```
 Please ensure a working CUDA installation and  compatible versions of torch and transformers.
 
+**Note**: Phi-4-multimodal requires a downgrade of the transformers library to transformers==4.48.2 
+
 ### 2. Dataset
 The benchmark uses two primary files:
 
